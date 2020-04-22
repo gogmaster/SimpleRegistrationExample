@@ -35,8 +35,8 @@ jobs:
     
     - uses: actions/upload-artifact@v1
       with:
-        name: app-target-folder
-        path: target
+        name: Maven-Artifact
+        path: target/*.jar
 
   build-gradle:
     # The type of runner that the job will run on
@@ -60,5 +60,5 @@ jobs:
 
     - uses: actions/upload-artifact@v1
       with:
-        name: app-target-folder
-        path: target
+        name: Gradle-Artifact
+        path: build/libs
